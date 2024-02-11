@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezzy Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  
+<style>
+  
+@font-face 
+    {
+        font-family: 'classy'; 
+        src: url('classy_vogue.otf');
+    }
+
+    h2
+    {
+        font-family: 'classy'; 
+    }
+
+</style>
+
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Ezzy<span>Hotel</span></h2>
+      <div class="toggle"></div>
+    </header>
+
+    <video src="video/Highlight Webcraft new.mp4" muted loop autoplay></video>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>Where You, Health, Lifestyle Begin</h2>
+      <h3>Have A Great Stay at Ezzy Hotel</h3>
+      <a href="#">Explore</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="#"><img src="image/facebook.png"></a></li>
+      <li><a href="#"><img src="image/twitter.png"></a></li>
+      <li><a href="#"><img src="image/instagram.png"></a></li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Facilities</a></li>
+      <li><a href="#">Our Room</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <section id="about_us">
+
+    <div class="layar_dalam">
+      <h3>Ezzy Smart Resort Hotel Bali</h3>
+      <p>Jln. Hayam Wuruk No. 199 Denpasar Bali</p>
+      <p>Telp. (0361) 474 8590</p>
+    <div class="konten_isi">
+      <p>
+        Overviewing the stunning Jimbaran Bay, 15 minutes from Ngurah Rai International 
+        air port 10 minutes to Uluwatu Temple, Dreamland Beach, Pandawa Beach, Jimbaran 
+        Fish restaurant, New Kuta Water park, New Kuta Golf course, and 2 minutes to Garuda Wisnu Kencana.
+      </p>
+
+    </div>
+
+    </div>
+
+  </section>
+
+  <script>
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
